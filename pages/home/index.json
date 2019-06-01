@@ -5,6 +5,8 @@
         "v-recent": "/components/recent/index",
         "v-consult": "/components/consult/index",
         "v-support": "/components/support/index",
-        "v-loading": "/components/loading/index"
+        "v-loading": "/components/loading/index",
+        "v-position": "/components/position/index",
+        "v-phone": "/components/phone/index"
   }
 }

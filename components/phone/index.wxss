@@ -1,0 +1,35 @@
+.phone_container{
+  position: fixed;
+  bottom:160rpx;
+  right:20rpx;
+  background-color:rgba(0,0,0,.4);
+  border-radius:50%;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.func-image{
+  height:100rpx;
+  width:100rpx;
+  background-color:transparent;
+  color:#fff;
+  font-size:12px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  padding:0;
+  border:none;
+}
+
+.func-image image{
+  width:40rpx;
+  height:40rpx;
+}
+
+.func-image view{
+  height:40rpx;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
