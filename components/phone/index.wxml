@@ -1,0 +1,7 @@
+
+<view class="phone_container" bind:tap="makePhone">
+  <button class="func-image">
+    <image slot="img" src="/imgs/public/phone.png" />
+    <view>电话</view>
+  </button>
+</view>

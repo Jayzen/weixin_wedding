@@ -1,0 +1,7 @@
+
+<view class="position_container" bind:tap="redirectAddress">
+  <button class="func-image">
+    <image slot="img" src="/imgs/public/position.png" />
+    <view>定位</view>
+  </button>
+</view>
