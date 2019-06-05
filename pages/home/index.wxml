@@ -6,4 +6,4 @@
 <v-consult />
 <v-support />
 <v-loading class="loading-center" wx:if="{{loadingCenter}}"/>
-<v-phone phone="1788888888"/>
+<v-phone phone="{{basic.phone}}"/>
