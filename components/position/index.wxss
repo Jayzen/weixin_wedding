@@ -1,7 +1,7 @@
 .position_container{
   position: fixed;
   bottom:50rpx;
-  right:20rpx;
+  right:27rpx;
   background-color:rgba(0,0,0,.4);
   border-radius:50%;
   overflow: hidden;

@@ -42,10 +42,9 @@ Page({
     },
 
     redirectAppointment: function(event){
-        wx.redirectTo({
+        wx.switchTab({
             url: '/pages/appointment/index'
         })
-        console.log("hello world")
     },
 
     onShareAppMessage: function () {

@@ -1,7 +1,4 @@
 import {
-    LocationModel
-} from '../../models/location'
-import {
     CarouselModel
 } from '../../models/carousel'
 import {
@@ -11,14 +8,12 @@ import {
     BasicModel
 } from '../../models/basic'
 
-const locationModel = new LocationModel()
 const carouselModel = new CarouselModel()
 const photographModel = new PhotographModel()
 const basicModel = new BasicModel()
 
 Page({
     data: {
-        location: null,
         carousels: null,
         photographs: null,
         basic: null,
@@ -26,13 +21,7 @@ Page({
     },
 
     onLoad: function () {
-        locationModel.getLocation()
-            .then(res => {
-                this.setData({
-                    location: res
-                })
-                return carouselModel.getCarousels()
-            })
+        carouselModel.getCarousels()
             .then(res => {
                 this.setData({
                     carousels: res
