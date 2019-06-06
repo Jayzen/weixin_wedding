@@ -13,7 +13,11 @@ Page({
         loadingCenter: true
     },
 
-    onLoad: function (options) {
+    onLoad: function () {
+        this._loadData();
+    },
+
+    _loadData: function (callback) {
         locationModel.getLocation()
             .then(res => {
                 this.setData({
@@ -25,9 +29,19 @@ Page({
                 this.setData({
                     top: res
                 })
+                callback && callback();
             }).
             catch(res => {
                 console.log(res);
             })
+    },
+
+    onPullDownRefresh: function () {
+        this._loadData(() => {
+            wx.stopPullDownRefresh()
+        });
+    },
+
+    onShareAppMessage: function () {
     }
 })

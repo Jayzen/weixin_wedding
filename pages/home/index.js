@@ -7,7 +7,7 @@ import {
 import {
     BasicModel
 } from '../../models/basic'
-
+ 
 const carouselModel = new CarouselModel()
 const photographModel = new PhotographModel()
 const basicModel = new BasicModel()
@@ -21,6 +21,10 @@ Page({
     },
 
     onLoad: function () {
+        this._loadData();
+    },
+
+    _loadData: function (callback) {
         carouselModel.getCarousels()
             .then(res => {
                 this.setData({
@@ -39,12 +43,19 @@ Page({
                     basic: res,
                     loadingCenter: false  
                 })
+                callback && callback();
             }).
             catch(res => {
                 console.log(res);
             })
     },
-  
+
+    onPullDownRefresh: function () {
+        this._loadData(() => {
+            wx.stopPullDownRefresh()
+        });
+    },
+
     onShareAppMessage: function () {
     }
 })

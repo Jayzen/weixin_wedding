@@ -8,9 +8,11 @@
   ],
   "window": {
     "navigationBarTitleText": "象湖摄影工作室",
-    "backgroundTextStyle": "light",
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "list": [
