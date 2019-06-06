@@ -3,6 +3,7 @@
       "v-support": "/components/support/index",
       "v-appointment": "/components/appointment/index",
       "v-loading": "/components/loading/index",
-      "v-position": "/components/position/index"
+      "v-position": "/components/position/index",
+      "v-top": "/components/top/index"
   }
 }

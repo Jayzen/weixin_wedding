@@ -1,6 +1,4 @@
-<view class="banner">
-  <image class="banner" src="{{carousel.pic}}" />
-</view>
+<v-top top="{{top}}" />
 <view class="title">
   <text>预约到店</text>
 </view>

@@ -1,12 +1,12 @@
 import {
-    CarouselModel
-} from '../../models/carousel'
-import {
     LocationModel
 } from '../../models/location'
+import {
+    TopModel
+} from '../../models/top'
 
-const carouselModel = new CarouselModel()
 const locationModel = new LocationModel()
+const topModel = new TopModel()
 
 Page({
     data: {
@@ -14,17 +14,16 @@ Page({
     },
 
     onLoad: function (options) {
-        carouselModel.getCarousel()
-            .then(res => {
-                this.setData({
-                    loadingCenter: false,
-                    carousel: res
-                })
-                return locationModel.getLocation()
-            })
+        locationModel.getLocation()
             .then(res => {
                 this.setData({
                     location: res
+                })
+                return topModel.getTop()
+            })
+            .then(res => {
+                this.setData({
+                    top: res
                 })
             }).
             catch(res => {
