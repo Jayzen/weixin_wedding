@@ -1,0 +1,17 @@
+.consult{
+  margin:30rpx 20rpx;
+  padding-bottom:30rpx;
+  display:flex;
+  flex-direction: column;
+  border-bottom:1rpx solid #ddd;
+  font-size:14px;
+}
+
+.item_top{
+  display:flex;
+  justify-content: space-between;
+}
+
+.item_top .phone{
+  color:#687EF7;
+}
