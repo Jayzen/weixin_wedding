@@ -14,26 +14,29 @@ Component({
 
     data: {
         name: '',
-        contact: ''
+        contact: '',
+        content: ''
     },
 
     methods: {
-        formSubmit: function (e) {
-            consultModel.createConsult(e.detail.value.name, e.detail.value.contact)
+        formSubmit: function(e) {
+            consultModel.createConsult(e.detail.value.name, e.detail.value.contact, e.detail.value.content)
                 .then(res => {
                     wx.showToast({
                         title: '提交成功',
                         icon: "none"
                     })
-                    templateModel.createTemplate(e.detail.formId, e.detail.value.name, e.detail.value.contact) 
+                    templateModel.createTemplate(e.detail.formId, e.detail.value.name, e.detail.value.contact, e.detail.value.content)
+                    console.log(e.detail.value.content)
                     this.setData({
                         name: '',
-                        contact: ''
+                        contact: '',
+                        content: ''
                     })
                 }).
-                catch(res => {
-                    console.log(res);
-                })
+            catch(res => {
+                console.log(res);
+            })
         },
     }
 })

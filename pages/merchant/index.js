@@ -13,6 +13,10 @@ Page({
         merchantModel.merchantVerify()
     },
 
+    onPullDownRefresh: function () {
+        wx.stopPullDownRefresh()
+    },
+
     onShareAppMessage: function () {
     }
 })

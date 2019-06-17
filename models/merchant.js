@@ -1,11 +1,11 @@
-import { config } from '../utils/config'
+import {
+    config
+} from '../utils/config'
 
-class MerchantModel{
+class MerchantModel {
     merchantVerify() {
-        var that = this;
         wx.login({
-            success: function (res) {
-                console.log(res.code);
+            success: function(res) {
                 wx.request({
                     url: config.api_base_url + 'merchant/verify',
                     method: 'POST',
@@ -15,7 +15,7 @@ class MerchantModel{
                     header: {
                         'appkey': config.appkey
                     },
-                    success: function (res) {
+                    success: function(res) {
                         wx.showToast({
                             title: '通知权限开通',
                             icon: "none"

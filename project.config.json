@@ -35,19 +35,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 1,
 			"list": [
 				{
-					"id": -1,
-					"name": "分类",
-					"pathName": "pages/photographs/index",
+					"id": 0,
+					"name": "merchant-consult",
+					"pathName": "pages/merchant-consult/index",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "appointment",
-					"pathName": "pages/appointment/index",
+					"id": 1,
+					"name": "merchant-appointment",
+					"pathName": "pages/merchant-appointment/index",
 					"query": "",
 					"scene": null
 				},

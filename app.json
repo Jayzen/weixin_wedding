@@ -5,7 +5,9 @@
         "pages/appointment/index",
         "pages/photographs/index",
         "pages/support/index",
-        "pages/merchant/index"
+        "pages/merchant/index",
+        "pages/merchant-consult/index",
+        "pages/merchant-appointment/index"
     ],
     "window": {
         "navigationBarTitleText": "象湖摄影工作室",
