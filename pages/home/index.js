@@ -7,7 +7,7 @@ import {
 import {
     BasicModel
 } from '../../models/basic'
- 
+
 const carouselModel = new CarouselModel()
 const photographModel = new PhotographModel()
 const basicModel = new BasicModel()

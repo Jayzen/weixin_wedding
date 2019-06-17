@@ -1,45 +1,46 @@
 {
-  "pages": [
-    "pages/home/index",
-    "pages/photograph-detail/index",
-    "pages/appointment/index",
-    "pages/photographs/index",
-    "pages/support/index"
-  ],
-  "window": {
-    "navigationBarTitleText": "象湖摄影工作室",
-    "backgroundColor": "#FFFFFF",
-    "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true
-  },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/home/index",
-        "iconPath": "imgs/toolbar/home.png",
-        "selectedIconPath": "imgs/toolbar/home@selected.png",
-        "text": "主页"
-      },
-      {
-        "pagePath": "pages/photographs/index",
-        "iconPath": "imgs/toolbar/category.png",
-        "selectedIconPath": "imgs/toolbar/category@selected.png",
-        "text": "分类"
-      },
-      {
-        "pagePath": "pages/appointment/index",
-        "iconPath": "imgs/toolbar/clock.png",
-        "selectedIconPath": "imgs/toolbar/clock@selected.png",
-        "text": "预约"
-      }
+    "pages": [
+        "pages/home/index",
+        "pages/photograph-detail/index",
+        "pages/appointment/index",
+        "pages/photographs/index",
+        "pages/support/index",
+        "pages/merchant/index"
     ],
-    "backgroundColor": "#F5F5F5",
-    "selectedColor": "#AB956D",
-    "color": "#989898",
-    "borderStyle": "white",
-    "position": "bottom"
-  },
-  "sitemapLocation": "sitemap.json"
+    "window": {
+        "navigationBarTitleText": "象湖摄影工作室",
+        "backgroundColor": "#FFFFFF",
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/home/index",
+                "iconPath": "imgs/toolbar/home.png",
+                "selectedIconPath": "imgs/toolbar/home@selected.png",
+                "text": "主页"
+            },
+            {
+                "pagePath": "pages/photographs/index",
+                "iconPath": "imgs/toolbar/category.png",
+                "selectedIconPath": "imgs/toolbar/category@selected.png",
+                "text": "分类"
+            },
+            {
+                "pagePath": "pages/appointment/index",
+                "iconPath": "imgs/toolbar/clock.png",
+                "selectedIconPath": "imgs/toolbar/clock@selected.png",
+                "text": "预约"
+            }
+        ],
+        "backgroundColor": "#F5F5F5",
+        "selectedColor": "#AB956D",
+        "color": "#989898",
+        "borderStyle": "white",
+        "position": "bottom"
+    },
+    "sitemapLocation": "sitemap.json"
 }

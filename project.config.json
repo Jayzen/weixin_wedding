@@ -35,15 +35,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
-				{
-					"id": 3,
-					"name": "detail",
-					"pathName": "pages/photograph-detail/index",
-					"query": "bid=3",
-					"scene": null
-				},
 				{
 					"id": -1,
 					"name": "分类",
@@ -55,6 +48,21 @@
 					"id": -1,
 					"name": "appointment",
 					"pathName": "pages/appointment/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "merchant",
+					"pathName": "pages/merchant/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "support",
+					"pathName": "pages/support/index",
+					"query": "",
 					"scene": null
 				}
 			]

@@ -1,0 +1,3 @@
+<view class="form_wrapper">
+    <button class="submit_btn" bind:tap="merchantVerify">点击获得通知权限</button>
+</view>
