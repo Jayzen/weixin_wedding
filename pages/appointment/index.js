@@ -1,24 +1,47 @@
 import {
-    CarouselModel
-} from '../../models/carousel'
+    LocationModel
+} from '../../models/location'
+import {
+    TopModel
+} from '../../models/top'
 
-const carouselModel = new CarouselModel()
+const locationModel = new LocationModel()
+const topModel = new TopModel()
 
 Page({
     data: {
         loadingCenter: true
     },
 
-    onLoad: function (options) {
-        carouselModel.getCarousel()
+    onLoad: function () {
+        this._loadData();
+    },
+
+    _loadData: function (callback) {
+        locationModel.getLocation()
             .then(res => {
                 this.setData({
-                    loadingCenter: false,
-                    carousel: res
+                    location: res
                 })
+                return topModel.getTop()
+            })
+            .then(res => {
+                this.setData({
+                    top: res
+                })
+                callback && callback();
             }).
             catch(res => {
                 console.log(res);
             })
+    },
+
+    onPullDownRefresh: function () {
+        this._loadData(() => {
+            wx.stopPullDownRefresh()
+        });
+    },
+
+    onShareAppMessage: function () {
     }
 })

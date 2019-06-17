@@ -20,19 +20,20 @@ Page({
         photographModel.getPhotograph(bid)
             .then(res => {
                 this.setData({
-                    photograph: res            
+                    photograph: res
                 })
                 return basicModel.getBasic()
             })
             .then(res => {
                 this.setData({
                     basic: res,
-                    loadingCenter: false  
+                    loadingCenter: false
                 })
             }).
             catch(res => {
                 console.log(res);
             })
+        
     },
 
     makePhone: function (event) {
@@ -42,10 +43,13 @@ Page({
     },
 
     redirectAppointment: function(event){
-        wx.redirectTo({
+        wx.switchTab({
             url: '/pages/appointment/index'
         })
-        console.log("hello world")
+    },
+
+    onPullDownRefresh: function () {
+        wx.stopPullDownRefresh()
     },
 
     onShareAppMessage: function () {

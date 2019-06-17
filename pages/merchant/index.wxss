@@ -1,0 +1,12 @@
+.form_wrapper{
+  margin-top: 500rpx;
+}
+
+.submit_btn{
+  width:400rpx;
+  height:80rpx;
+  line-height:80rpx;
+  background:#71b5e5;
+  border-radius: 0;
+  color:#fff;
+}

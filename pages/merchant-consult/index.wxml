@@ -1,0 +1,6 @@
+<block wx:for="{{consults}}">
+    <text>{{index+1}}</text>
+    <text>{{item.name}}</text>
+    <text data-contact="{{item.contact}}" bind:tap="makePhone">{{item.contact}}</text>
+    <text>咨询内容: {{item.content}}</text>
+</block>

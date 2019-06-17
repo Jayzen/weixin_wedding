@@ -1,9 +1,8 @@
-<view class="banner">
-  <image class="banner" src="{{carousel.pic}}" />
-</view>
+<v-top top="{{top}}" />
 <view class="title">
   <text>预约到店</text>
 </view>
 <v-appointment />
 <v-support />
 <v-loading class="loading-center" wx:if="{{false}}"/>
+<v-position location="{{location}}"/>

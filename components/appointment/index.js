@@ -1,19 +1,26 @@
 import {
     AppointmentModel
 } from '../../models/appointment'
+import {
+    TemplatetModel
+} from '../../models/template'
 
+const templateModel = new TemplatetModel()
 const appointmentModel = new AppointmentModel()
 
 Component({
     methods: {
         formSubmit: function(e) {
             console.log(e.detail.behavior)
-            appointmentModel.createAppointment(e.detail.value.name, e.detail.value.contact, e.detail.value.date, e.detail.value.time)
+            appointmentModel.createAppointment(e.detail.value.name, e.detail.value.contact,
+                    e.detail.value.date, e.detail.value.time)
                 .then(res => {
                     wx.showToast({
                         title: '提交成功',
                         icon: "none"
                     })
+                    templateModel.createAppointmentTemplate(e.detail.formId, e.detail.value.name,
+                        e.detail.value.contact, e.detail.value.date, e.detail.value.time)
                     this.setData({
                         name: '',
                         contact: '',

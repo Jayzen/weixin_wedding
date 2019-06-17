@@ -17,6 +17,12 @@ class AppointmentModel extends HTTP {
             }
         })
     }
+
+    getAppointments() {
+        return this.request({
+            url: 'appointments',
+        })
+    }
 }
 
 export {

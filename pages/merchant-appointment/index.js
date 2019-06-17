@@ -1,24 +1,22 @@
 import {
-    PhotographModel
-} from '../../models/photograph'
+    AppointmentModel
+} from '../../models/appointment'
 
-const photographModel = new PhotographModel()
+const appointmentModel = new AppointmentModel()
 
 Page({
     data: {
-        loadingCenter: true
     },
-    
+
     onLoad: function () {
         this._loadData();
     },
 
     _loadData: function (callback) {
-        photographModel.getPhotographs()
+        appointmentModel.getAppointments()
             .then(res => {
                 this.setData({
-                    loadingCenter: false,
-                    photographs: res
+                    appointments: res
                 })
                 callback && callback();
             }).
@@ -27,10 +25,9 @@ Page({
             })
     },
 
-    onTap(event) {
-        const bid = event.target.dataset.id
-        wx.navigateTo({
-            url: `/pages/photograph-detail/index?bid=${bid}`
+    makePhone: function (event) {
+        wx.makePhoneCall({
+            phoneNumber: event.currentTarget.dataset.contact
         })
     },
 

@@ -1,0 +1,6 @@
+<block wx:for="{{appointments}}">
+    <text>{{index+1}}</text>
+    <text>{{item.name}}</text>
+    <text data-contact="{{item.contact}}" bind:tap="makePhone">{{item.contact}}</text>
+    <text>预约时间: {{item.date+" "+item.time}}</text>
+</block>
