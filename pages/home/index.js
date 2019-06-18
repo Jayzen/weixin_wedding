@@ -7,10 +7,18 @@ import {
 import {
     BasicModel
 } from '../../models/basic'
+import {
+    RecentModel
+} from '../../models/recent'
+import {
+    HomeCategoryModel
+} from '../../models/home_category'
 
 const carouselModel = new CarouselModel()
 const photographModel = new PhotographModel()
 const basicModel = new BasicModel()
+const recentModel = new RecentModel()
+const homeCategoryModel = new HomeCategoryModel()
 
 Page({
     data: {
@@ -40,12 +48,24 @@ Page({
             })
             .then(res => {
                 this.setData({
-                    basic: res,
-                    loadingCenter: false  
+                    basic: res
+                })
+                return recentModel.getRecents()
+            })
+            .then(res => {
+                this.setData({
+                    recents: res,
+                })
+                return homeCategoryModel.getHomeCategories()
+            })
+            .then(res => {
+                this.setData({
+                    home_categories: res,
+                    loadingCenter: false
                 })
                 callback && callback();
-            }).
-            catch(res => {
+            })
+            .catch(res => {
                 console.log(res);
             })
     },

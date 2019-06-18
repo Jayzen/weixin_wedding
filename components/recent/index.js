@@ -1,6 +1,6 @@
 Component({
     properties: {
-        photographs: {
+        recents: {
             type: Array
         }
     },
@@ -9,7 +9,6 @@ Component({
 
     methods: {
         onTap(event) {
-            console.log(event)
             const bid = event.target.dataset.id
             wx.navigateTo({
                 url: `/pages/photograph-detail/index?bid=${bid}`

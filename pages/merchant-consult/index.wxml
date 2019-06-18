@@ -1,8 +1,10 @@
-<view class="consult" wx:for="{{consults}}">
-    <view class="item_top">
-        <!-- <text></text> -->
-        <text>{{index+1}}.{{item.name}}</text>
-        <text class="phone" data-contact="{{item.contact}}" bind:tap="makePhone">{{item.contact}}</text>
+<view class="consult_container">
+    <view class="consult" wx:for="{{consults}}">
+        <view class="item_top">
+            <!-- <text></text> -->
+            <text>{{index+1}}.{{item.name}}</text>
+            <text class="phone" data-contact="{{item.contact}}" bind:tap="makePhone">{{item.contact}}</text>
+        </view>
+        <text>咨询内容: {{item.content}}</text>
     </view>
-    <text>咨询内容: {{item.content}}</text>
 </view>

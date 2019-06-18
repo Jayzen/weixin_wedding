@@ -1,5 +1,5 @@
 <view class="recent_wrapper">
-    <view wx:for="{{photographs}}" class="recent_item">
-        <image data-id="{{item.id}}" bind:tap="onTap" class="item-image" src="{{item.big_pic}}" class="big_pic" />
+    <view wx:for="{{recents}}" class="recent_item">
+        <image data-id="{{item.photograph.id}}" bind:tap="onTap" class="item-image" src="{{item.pic}}" class="pic" />
     </view>
 </view>

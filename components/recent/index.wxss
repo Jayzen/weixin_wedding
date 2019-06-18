@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-.big_pic{
+.pic{
     width:100%;
     height:200rpx;
     /* width: 200rpx;

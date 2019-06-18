@@ -1,7 +1,7 @@
 {
   "usingComponents": {
         "v-carousel": "/components/carousel/index",
-        "v-photograph": "/components/photograph/index",
+        "v-home-category": "/components/home-category/index",
         "v-recent": "/components/recent/index",
         "v-consult": "/components/consult/index",
         "v-support": "/components/support/index",

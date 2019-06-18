@@ -27,7 +27,6 @@ Component({
                         icon: "none"
                     })
                     templateModel.createTemplate(e.detail.formId, e.detail.value.name, e.detail.value.contact, e.detail.value.content)
-                    console.log(e.detail.value.content)
                     this.setData({
                         name: '',
                         contact: '',

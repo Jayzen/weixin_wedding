@@ -1,8 +1,10 @@
-<view class="consult" wx:for="{{appointments}}">
-    <view class="item_top">
-        <!-- <text></text> -->
-        <text>{{index+1}}.{{item.name}}</text>
-        <text class="phone" data-contact="{{item.contact}}" bind:tap="makePhone">{{item.contact}}</text>
+<view class="appointment_container">
+    <view class="consult" wx:for="{{appointments}}">
+        <view class="item_top">
+            <!-- <text></text> -->
+            <text>{{index+1}}.{{item.name}}</text>
+            <text class="phone" data-contact="{{item.contact}}" bind:tap="makePhone">{{item.contact}}</text>
+        </view>
+        <text>预约时间: {{item.date+" "+item.time}}</text>
     </view>
-    <text>预约时间: {{item.date+" "+item.time}}</text>
 </view>

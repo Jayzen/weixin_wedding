@@ -11,7 +11,7 @@
    padding:20rpx;
 }
 
-.small_pic {
+.pic {
    width: 50rpx; 
    height: 50rpx;
    margin-bottom:20rpx;

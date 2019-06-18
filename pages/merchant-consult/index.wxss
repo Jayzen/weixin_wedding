@@ -1,6 +1,12 @@
+.consult_container{
+    margin-top: 100rpx; 
+    margin-right: 40rpx;
+    margin-left: 40rpx;
+}
+
 .consult{
-  margin:30rpx 20rpx;
-  padding-bottom:30rpx;
+  margin-top: 20rpx;
+  /* padding-bottom:30rpx; */
   display:flex;
   flex-direction: column;
   border-bottom:1rpx solid #ddd;
@@ -13,5 +19,5 @@
 }
 
 .item_top .phone{
-  color:#687EF7;
+  color: #AB956D;
 }

@@ -1,6 +1,6 @@
 Component({
     properties: {
-        photographs: {
+        home_categories: {
             type: Array
         }
     },

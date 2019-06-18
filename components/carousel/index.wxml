@@ -2,7 +2,7 @@
     <swiper indicator-dots="true" autoplay="true" class="swiper" interval="2000" circular="true">
         <block wx:for="{{carousels}}">
             <swiper-item class="banner-item">
-                <image class="item-image" src="{{item.pic}}" mode="aspectFill" />
+                <image class="item-image" data-id="{{item.photograph.id}}" bind:tap="onTap" src="{{item.pic}}" mode="aspectFill" />
             </swiper-item>
         </block>
     </swiper>
