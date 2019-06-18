@@ -11,7 +11,18 @@
     background:#f8f8f8;
     margin-bottom:30rpx;
 }
-
+.form_wrapper textarea{
+    height:160rpx;
+    padding:20rpx;
+    background:#f8f8f8;
+    margin-bottom:30rpx;
+    width:100%;
+    box-sizing: border-box;
+    /* display:inline-block; */
+}
+.form_wrapper .ask_content{
+    height:160rpx;
+}
 .submit_btn{
     width:250rpx;
     height:80rpx;
