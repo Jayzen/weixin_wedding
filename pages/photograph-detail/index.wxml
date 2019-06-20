@@ -1,4 +1,4 @@
-<image class="item-image" src="{{photograph.big_pic}}" />
+<image class="item-image" src="{{photograph.pic}}" />
 <view class="title" wx:if="{{photograph}}">
   <view>{{photograph.name}}</view>
   <view class="title_price">{{'¥'+photograph.price}}</view>

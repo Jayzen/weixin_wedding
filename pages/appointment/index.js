@@ -27,7 +27,8 @@ Page({
             })
             .then(res => {
                 this.setData({
-                    top: res
+                    top: res,
+                    loadingCenter: false
                 })
                 callback && callback();
             }).
